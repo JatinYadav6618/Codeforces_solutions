@@ -1,3 +1,7 @@
+//*********************
+//**  Author-JATIN   **
+//*********************
+ 
 #include<bits/stdc++.h>
 using namespace std;
  
@@ -7,24 +11,23 @@ using namespace std;
 #define mod 1000000007
 #define br "\n"
 #define fo(i,n) for(int i=0;i<n;i++)
+#define fo1(i,n) for(int i =1;i<=n;i++)
+#define vec vector<int>
 #define pb push_back
+#define MAXT *max_element(a.begin(),a.end())
+#define MINT *min_element(a.begin(),a.end())
  
 void solve()
 {
-    int n; cin>>n;
-    int ele;
-    double sum=0;
-    for(int i=1;i<=n;i++){
-        cin>>ele;
-        sum+=ele;
-    }
-    cout<<fixed<<setprecision(12)<<double(sum/n)<<br;
-
+    int s;cin>>s;
+    float x=0.5;
+    int ans=ceil(pow(s,x));
+    cout<<ans<<br;
 }
  
 int32_t main()
 {
  fastIO
-// testCases 
+testCases 
  solve();
 }

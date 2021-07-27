@@ -11,15 +11,9 @@ using namespace std;
  
 void solve()
 {
-    int n; cin>>n;
-    int ele;
-    double sum=0;
-    for(int i=1;i<=n;i++){
-        cin>>ele;
-        sum+=ele;
-    }
-    cout<<fixed<<setprecision(12)<<double(sum/n)<<br;
-
+    int n,a,b; cin>>n>>a>>b;
+    if((n-a)<=b)cout<<(n-a)<<br;
+    else cout<<b+1<<br;
 }
  
 int32_t main()
